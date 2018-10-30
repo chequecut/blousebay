@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 15%;
+    width: 100%;
+    background:      white;
+    /* linear-gradient(45deg,  transparent 0%, transparent 57%, #423246 100%),
+    linear-gradient(-45deg, #8f5046 0%,  #A14436 0.3%, #4C2556 112%,  transparent 11% ),
+    linear-gradient(-90deg, #A14436 100%, #A14436 65%, transparent 20% );
+    */
+    text-transform: uppercase;  
+    position: fixed;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color:black;
+    padding: 18px 22px 25px 25px;
+    text-transform: capitalize;
+    /* padding: 10px 10px 10px 10px; */
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 22px 22px 22px 22px;
+    text-transform: capitalize;
+    /* padding: 13px 10px 13px 10px; */
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: relative;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 44px;
+        height: 43px;
+        padding: 8px;
+        background-color: dodgerblue;
+        margin-right: -100px;
+        margin-top: 55px;
+    }
+    .nav > .nav-btn > label:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 30px;
+      height: 12px;
+      border-top: 5px solid #eee;
+      /* width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee; */
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      color: black;
+      background-color: lavender
+    }
+    .nav > #nav-check:not(:checked) + .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked + .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+/* ///////////////////////////Top Header///////////////// */
+
+.bg{
+    background:      
+    linear-gradient(45deg,  transparent 0%, transparent 57%, #423246 100%),
+    linear-gradient(-45deg, #8f5046 0%,  #A14436 0.3%, #4C2556 112%,  transparent 11% ),
+    linear-gradient(-90deg, #A14436 100%, #A14436 65%, transparent 20% );  
+}
+
+  .topheader{
+    height: 75px;
+    width: 100%;
+    background:      white;
+    /* linear-gradient(45deg,  transparent 0%, transparent 57%, #423246 100%),
+    linear-gradient(-45deg, #8f5046 0%,  #A14436 0.3%, #4C2556 112%,  transparent 11% ),
+    linear-gradient(-90deg, #A14436 100%, #A14436 65%, transparent 20% );    */
+    text-transform: uppercase;  
+    position: relative;
+  }
+
+  .mob-display {
+    display: none;
+}
+
+#navheader .search, #main-slider .carousel .btn-slide, .img-thumbnail-tab, .navbar-inverse .navbar-nav > li > a, .social-share, .social-share1, ul.social-share li, ul.social-share1 li {
+    display: inline-block;
+}
+
+ul.social-share li a, ul.social-share1 li a {
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 2px;
+    display: inline-block;
+}
+ul.social-share1 li a {
+    color: #fff;
+    padding-left: 5px;
+}
+ul.social-share1 li a:hover {
+    color: #c52d2f;
+}
+
+.social-share1 {
+    list-style: none;
+    padding: 0 12px 0 0;
+}
+/* 
+.fixed{
+  position: fixed;
+  
+} */
+
